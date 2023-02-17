@@ -20,7 +20,9 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header"></header>
+      <header className="App-header">
+        <h3>Đây là trang web</h3>
+      </header>
     </div>
   );
 }
