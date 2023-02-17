@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 
 function App() {
-  const [data, setData] = useState([]);
 
   useEffect(() => {
     const config = {
@@ -14,7 +13,7 @@ function App() {
       .then((response) => response.text())
       .then((buffer) => console.log(buffer))
       .catch((error) => {
-        // console.error(error);
+        console.log(error);
       });
   }, []);
 
